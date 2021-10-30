@@ -4,7 +4,7 @@ import Order from "./Order";
 const ManageOrder = () => {
   const [manageoder, setManageorder] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/users")
+    fetch("https://pacific-chamber-60187.herokuapp.com/users")
       .then((res) => res.json())
       .then((data) => setManageorder(data));
   }, []);

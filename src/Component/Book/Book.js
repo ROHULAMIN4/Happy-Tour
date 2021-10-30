@@ -12,7 +12,7 @@ const Book = () => {
         const { name, price, img, description } = data;
         const newUser = { name, price, img, description };
 
-        fetch("http://localhost:5000/users", {
+        fetch("https://pacific-chamber-60187.herokuapp.com/users", {
           method: "POST",
           headers: {
             "content-type": "application/json",

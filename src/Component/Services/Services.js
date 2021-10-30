@@ -8,7 +8,7 @@ const Services = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
     AOS.init();
-    fetch("http://localhost:5000/addservices")
+    fetch("https://pacific-chamber-60187.herokuapp.com/addservices")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);

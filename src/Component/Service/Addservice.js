@@ -6,13 +6,15 @@ import "./Addservice.css";
 const Addservice = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/addservices", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Added successfully");
-        // form reset for using react hook form
-        reset();
-      }
-    });
+    axios
+      .post("https://pacific-chamber-60187.herokuapp.com/addservices", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Added successfully");
+          // form reset for using react hook form
+          reset();
+        }
+      });
   };
   return (
     <div className="Addservice ">

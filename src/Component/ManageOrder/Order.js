@@ -7,7 +7,7 @@ const Order = (props) => {
   const { name, price, img, description, _id } = props.order;
 
   const handleDeletin = (id) => {
-    const url = `http://localhost:5000/${id}`;
+    const url = `https://pacific-chamber-60187.herokuapp.com/${id}`;
     fetch(url, {
       method: "DELETE",
     })
