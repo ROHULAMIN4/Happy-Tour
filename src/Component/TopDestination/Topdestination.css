@@ -1,0 +1,16 @@
+.top-des-banner {
+  background-image: url(https://i.ibb.co/Dws4gtS/v915-techi-020.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+.top-des-banner img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+.banner-img :hover {
+  box-shadow: -5px 5px 0px rgb(36, 35, 35);
+  transition: 0.7s;
+}
